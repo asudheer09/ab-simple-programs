@@ -1,0 +1,321 @@
+Author- James Gosling
+Vendor- Sun micro system  ( Oracle)
+Project Name- Green Team
+type- open source
+intial name : OAK
+present name : java
+extension -.java, .class, jar (collection of .class files)
+present version -18
+os supports- all
+base language- c++
+priniciple - WORA (write once run any where)
+
+parts of Java:
+1. J2SE ( java Standard Edition)
+2. J2EE /JEE (Java Enterprise Edition)
+3.J2ME /JME (Java Micro Edition)
+
+JDK- Java Development Kit - to develop java applications
+JRE - Java Runtime Environment- provides run time environment for all java applications.
+
+Java is OOP (Object orieneted Program)
+
+Basic concepts in OOP
+1. Class
+2. Object
+3. Inheritance
+4. Polymorphism
+5. Encapsulation
+6. Abstraction
+
+Basic Structure of the Program
+========================
+
+public class Demo{
+
+public static void main(String args[]){
+
+System.out.println("hello world");
+
+}
+
+}
+
+save the file with the name Demo.java
+
+to compile: javac Demo.java ---> Demo.class
+to run : java Demo
+
+
+src- Source
+
+package : group of related classes and interfaces
+ why ? : to resolve naming conflicts.
+ In once package u can create any no of classes or interfaces.
+
+ IDE - Integrated Development Environment: Eclipse, Intellij,NetBeans etc.
+
+ Intellij shortcuts:
+ =============
+ main
+ sout
+
+ explain about main method?
+ =========================
+ public class Test {
+    public static void main(String[] args) {
+        System.out.println("hello how are you ?");
+    }
+}
+
+public --> access specifier  ( private,protected)
+
+class --> to create any class we use this class keyword.
+
+keyword = reserved word in programming, every keyword has some purpose.
+
+general synax to create class:
+
+class ClassName{
+
+// fields or varaibles or state
+// methods or behaviours
+// constructors
+
+
+}
+
+class name should start with capital letter.
+examples: Test ,HelloWorldTest, Book, Employee, Student etc.
+
+static: without creating object also still you call that method.
+
+void : it doesnot return any value.
+
+main : is the name of the method.
+
+String[] args: it is used to store inputs passed at runtime.
+
+JDK =JRE+JVM
+
+JRE=JRE+JVM
+
+difference between print() vs println()
+=============================
+System.out.print(" this is print"); print the message and put the curser in the same line.
+System.out.println(" this is print"); print the message and put the curser in the next line.
+
+data types:
+data : any information is called data.
+data type: it defines type of data.
+ in java we have 2 types of data types there:
+ 1. primitives
+ 2. non-primitives
+
+
+1. primitive data types:
+
+data type name   size 			default values		range
+============	====		===========		=====
+byte          			1 byte			0						-128 to 127
+short					2 bytes		0						-32,768 to 32,767
+int						4					0						-2,147,483,648 to 2,147,483,647
+long						8					0						-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+float						4					0.0					for storing 6 to 7 decimal digits
+double					8					0.0					Sufficient for storing 15 decimal digits
+char						2                  empty sace
+boolean   			1					false
+
+varaibles:
+=======
+varaibles are used to store the data , print the data, we can use the value in future.
+
+variables decleration syntax:
+
+access-specifier datatype varaibleName= some value;
+
+examples: public int studentId=123;
+
+variable names sould start with lower case.
+
+operators
+=======
++ add
+- subtraction
+* multiplication
+/ division
+% - modulo operator (gives reminder)
+
+rules for naming varaible
+System.out.println
+
+
+control structures:
+==============
+
+conditional operators:
+==================
+==,
+!=,
+>=,
+<=,
+>,
+< etc.
+
+ 10>20 --> false
+ 10==20 --> false
+ 10==10 -->true
+ 10<20  --> true
+ 10!=20 -->true
+
+if syntax :
+=======
+ if(condition){
+	// if condition is true it will execute.
+}
+
+if-else syntax:
+===========
+if(condition){
+	// if condition is true it will execute.
+}else{
+	// if condition is false it will execute.
+}
+}
+
+nested if:
+======
+
+if(condition1){
+
+	 if(condition2){
+			// condition2 if statment executed
+	 }else{
+			// condition2 else  statment executed
+	 }
+
+}else{
+	// condition1 else statment executed
+}
+
+Example:
+========
+
+if (n >= 125) {
+       if (n == 127) {
+             System.out.println("n is equal to 127");
+        } else {
+                System.out.println("n is not equal to 127");
+        }
+  } else {
+      System.out.println("n is less than 125");
+ }
+
+even numbers:
+2,4,6,8,10 ....etc
+
+If we devide any number by 2 and if reminder is zero then we call it as even number.
+
+to get reminder  we use modulo operator %.
+
+n is number if n is even number then it should be n%2==0
+
+odd numbers
+1,3,5,7,9 etc
+
+If we devide any number by 2 and if reminder is not zero then we call it as even number.
+
+if -else if -else if ----- else
+===============================
+
+Reading input from keyboard
+=======================
+1. Scanner
+
+2. BufferedReader and InputStreamReader
+
+Scanner:
+
+java.lang
+import java.util.Scanner;
+
+// className reference= new className(); //
+
+Scanner scan = new Scanner(System.in);
+
+String s = scan.next();
+int i = scan.nextInt();
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+//...
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+String s = br.readLine();
+
+int i = Integer.parseInt(s);
+
+==================================
+
+Loops : 3 types
+for
+while
+do-while
+
+for loop syntax:
+
+for(dataType var=value;condition (true/false); increment/decrement){
+    //statements
+}
+
+example: WAP to print "hi" for 100 times
+
+++ increment operator ---> it increment a value by 1
+
+i=10;
+i++ --->i=11;
+
+for(int i=0;i<100;i++){
+System.out.println("hi");
+}
+
+Reading input:
+If you want to read input in java we have 2 options
+1. using Scanner class
+2. using BufferedReader
+
+Scanner class:
+=============
+1. To read input we use Scanner class.
+2. We need to create Scanner class object by passing System.in (keyboard)
+3. Scanner sc= new Scanner(System.in);
+4. Import the Scanner class ====> import java.util.Scanner
+5. To read Integer we use sc.nextInt()
+6. To read Float we use sc.nextFloat()
+7. To read long String value we use sc.nextLine()
+8. To read short String value we use sc.next()
+9. To read Long data type we sc.nextLong() etc.
+10. Scanner class present in java.util package.
+
+Comments In java:
+
+there are 3 types of comments in java
+1. single line comment // any comment
+2. multi-line comment /*  my comment */
+3. document comment /**  document */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
