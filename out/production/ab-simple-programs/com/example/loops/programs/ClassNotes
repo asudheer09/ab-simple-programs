@@ -305,7 +305,40 @@ there are 3 types of comments in java
 3. document comment /**  document */
 
 
+In java there are 3 types of loops available:
 
+1. for
+2. while
+3. do-while
+
+1. for :
+
+syntax: for( declaration;condition;increment/decrement){
+    //statements
+}
+
+use: If we know no of times you want to execute go with for loop
+
+2. while
+
+while (condition){
+    //statements
+}
+
+use: If we dont know no of times you want to execute go with for while.
+
+3. do-while
+
+do {
+//statements
+} while(condition)
+
+
+difference between while and do-while is
+
+in while condition----> first condition will be checked then based on condition statments will be executed
+in do-while ---> first statements will be executed then it will check the condition.
+(at least once the statements will be executed in the do-while )
 
 
 
